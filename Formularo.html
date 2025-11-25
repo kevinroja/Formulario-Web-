@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Contacto</title>
+</head>
+<body>
+  <h2>Formulario de Contacto</h2>
+  <form action="#" method="post">
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="apellido">Apellido:</label><br>
+    <input type="text" id="apellido" name="apellido" required><br><br>
+
+    <label for="tipo_id">Tipo de Identificación:</label><br>
+    <select id="tipo_id" name="tipo_id" required>
+      <option value="">Seleccione...</option>
+      <option value="CC">Cédula de Ciudadanía</option>
+      <option value="TI">Tarjeta de Identidad</option>
+      <option value="PA">Pasaporte</option>
+    </select><br><br>
+
+    <label for="num_id">Número de Identificación:</label><br>
+    <input type="number" id="num_id" name="num_id" required><br><br>
+
+    <label for="fecha_nac">Fecha de Nacimiento:</label><br>
+    <input type="date" id="fecha_nac" name="fecha_nac" required><br><br>
+
+    <label for="celular">Número de Celular:</label><br>
+    <input type="tel" id="celular" name="celular" pattern="[0-9]{10}" required><br><br>
+
+    <label>
+      <input type="checkbox" name="politica" required>
+      Acepto la política de tratamiento de datos personales.
+    </label><br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
